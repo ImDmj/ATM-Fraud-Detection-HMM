@@ -1,0 +1,30 @@
+USE [HMM]
+GO
+
+/****** Object:  Table [dbo].[HistoryTran]    Script Date: 01/10/2014 12:33:00 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+SET ANSI_PADDING ON
+GO
+
+CREATE TABLE [dbo].[HistoryTran](
+	[HistoryTranID] [int] IDENTITY(1,1) NOT NULL,
+	[SequenceOp] [varchar](50) NULL,
+	[Type] [varchar](50) NULL,
+	[Ac_number] [int] NULL,
+ CONSTRAINT [PK_HistoryTran] PRIMARY KEY CLUSTERED 
+(
+	[HistoryTranID] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+
+SET ANSI_PADDING OFF
+GO
+
+

@@ -1,0 +1,7 @@
+flowControlIn=None
+flowControlOut=None
+stopbits=1
+databits=8
+parity=None
+portName=COM1
+baudRate=9600
